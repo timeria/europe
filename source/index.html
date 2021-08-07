@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Путешествие по Европе</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link rel="preload" href="fonts/montserrat.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserratbold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserratblack.woff2" as="font" crossorigin>
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <div class="page-header__container">
+      <a href="/" class="page-header__logo">
+        <img src="img/logo.svg" width="101" height="18" alt="Путешествие по Европе">
+      </a>
+      <div class="page-header__right">
+       <nav class="main-nav main-nav--active">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">
+              О путешествии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">
+              Цены
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="tel:+749978468446" class="page-header__phone">+7 (499) -784-684-46</a>
+      <button class="page-header__toggle visually-hidden" type="button"><span class="page-header__toggle-line">Открыть меню</span></button>
+    </div>
+  </div>
+</header>
+<main class="page-main">
+  <section class="banner">
+    <div class="banner__container">
+      <div class="banner__text">
+        <h1 class="banner__title">Путешествие по Европе</h1>
+        <p class="banner__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
+        <a href="#tabs" class="banner__button">смотреть тур</a>
+      </div>
+    </div>
+  </section>
+  <section class="places">
+    <div class="places__container">
+      <h2 class="places__title main-title">
+        Места посещения
+      </h2>
+      <p class="places__description main-description">
+        Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
+      </p>
+      <ul class="places__list main-list">
+        <li class="places__item">
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/place1.webp 1x, img/place1@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/place1-tablet.webp 1x, img/place1-tablet@2x.webp 2x">
+                  <source media="(min-width: 1024px)" srcset="img/place1.jpg 1x, img/place1@2x.jpg 2x">
+                    <source media="(min-width: 320px)" srcset="img/place1-tablet.jpg 1x, img/place1-tablet@2x.jpg 2x">
+                      <img src="img/place1.jpg" alt="Греция" width="350" height="430" srcset="img/place1@2x.jpg 2x" class="places__img">
+                    </picture>
+                    <h3 class="places__name">Греция</h3>
+                  </li>
+                  <li class="places__item">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1024px)" srcset="img/place2.webp 1x, img/place2@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 320px)" srcset="img/place2-tablet.webp 1x, img/place2-tablet@2x.webp 2x">
+                          <source media="(min-width: 1024px)" srcset="img/place2.jpg 1x, img/place2@2x.jpg 2x">
+                            <source media="(min-width: 320px)" srcset="img/place2-tablet.jpg 1x, img/place2-tablet@2x.jpg 2x">
+                              <img src="img/place2.jpg" alt="Греция" width="350" height="430" srcset="img/place2@2x.jpg 2x" class="places__img">
+                            </picture>
+                            <h3 class="places__name">Албания</h3>
+                          </li>
+                          <li class="places__item">
+                            <picture>
+                              <source type="image/webp" media="(min-width: 1024px)" srcset="img/place3.webp 1x, img/place3@2x.webp 2x">
+                                <source type="image/webp" media="(min-width: 320px)" srcset="img/place3-tablet.webp 1x, img/place3-tablet@2x.webp 2x">
+                                  <source media="(min-width: 1024px)" srcset="img/place3.jpg 1x, img/place3@2x.jpg 2x">
+                                    <source media="(min-width: 320px)" srcset="img/place3-tablet.jpg 1x, img/place3-tablet@2x.jpg 2x">
+                                      <img src="img/place3.jpg" alt="Греция" width="350" height="430" srcset="img/place2@2x.jpg 2x" class="places__img">
+                                    </picture>
+                                    <h3 class="places__name">Македония</h3>
+                                </li>
+                                <li class="places__item">
+                                  <picture>
+                                    <source type="image/webp" media="(min-width: 1024px)" srcset="img/place4.webp 1x, img/place4@2x.webp 2x">
+                                      <source type="image/webp" media="(min-width: 320px)" srcset="img/place4-tablet.webp 1x, img/place4-tablet@2x.webp 2x">
+                                        <source media="(min-width: 1024px)" srcset="img/place4.jpg 1x, img/place4@2x.jpg 2x">
+                                          <source media="(min-width: 320px)" srcset="img/place4-tablet.jpg 1x, img/place4-tablet@2x.jpg 2x">
+                                            <img src="img/place4.jpg" alt="Греция" width="350" height="430" srcset="img/place4@2x.jpg 2x" class="places__img">
+                                          </picture>
+                                          <h3 class="places__name">Черногория</h3>
+                                        </li>
+                                        <li class="places__item">
+                                          <picture>
+                                            <source type="image/webp" media="(min-width: 1024px)" srcset="img/place5.webp 1x, img/place5@2x.webp 2x">
+                                              <source type="image/webp" media="(min-width: 320px)" srcset="img/place5-tablet.webp 1x, img/place5-tablet@2x.webp 2x">
+                                                <source media="(min-width: 1024px)" srcset="img/place5.jpg 1x, img/place5@2x.jpg 2x">
+                                                  <source media="(min-width: 320px)" srcset="img/place5-tablet.jpg 1x, img/place5-tablet@2x.jpg 2x">
+                                                    <img src="img/place5.jpg" alt="Греция" width="350" height="430" srcset="img/place5@2x.jpg 2x" class="places__img">
+                                                  </picture>
+                                                  <h3 class="places__name">Хорватия</h3>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </section>
+                                          <section class="reviews">
+                                            <div class="reviews__tabs main-tabs">
+                                              <ul class="reviews__list main-tabs__list">
+                                                <li class="main-tabs__item">
+                                                  Греция
+                                                </li>
+                                                <li class="main-tabs__item">
+                                                  Албания
+                                                </li>
+                                                <li class="main-tabs__item">
+                                                  Македония
+                                                </li>
+                                                <li class="main-tabs__item">
+                                                  Черногория
+                                                </li>
+                                                <li class="main-tabs__item">
+                                                  Хорватия
+                                                </li>
+                                              </ul>
+                                              <div class="reviews__content main-tabs__content">
+                                                <div class="main-tabs__block">
+                                                  <div class="reviews__left">
+                                                    <h2 class="reviews__title main-title">
+                                                      Греция
+                                                    </h2>
+                                                    <p class="reviews__description main-description">
+                                                      На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
+                                                    </p>
+                                                    <button type="button" class="reviews__button main-button">купить тур сейчас
+                                                    </button>
+                                                  </div>
+                                                  <div class="reviews__right">
+                                                    <picture>
+                                                      <source type="image/webp" srcset="img/rev1.webp 1x, img/rev14@2x.webp 2x">
+                                                        <source srcset="img/rev1.jpg 1x, img/rev1@2x.jpg 2x">
+                                                          <img src="img/rev1.jpg" alt="Отзыв1" width="430" height="596" srcset="img/rev1@2x.jpg 2x" class="places__img">
+                                                        </picture>
+                                                        <div class="reviews__wrap">
+                                                          <h3 class="reviews__subtitle main-subtitle">
+                                                            Отзывы
+                                                          </h3>
+                                                          <p class="reviews__text">
+                                                            Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!
+                                                          </p>
+                                                          <div class="reviews__signature">
+                                                            <picture>
+                                                              <source type="image/webp" srcset="img/icon.webp 1x, img/icon14@2x.webp 2x">
+                                                                <source srcset="img/icon1.png 1x, img/icon1@2x.png 2x">
+                                                                  <img src="img/icon1.png" alt="Отзыв1" width="430" height="596" srcset="img/icon1@2x.png 2x" class="reviews__avatar">
+                                                                </picture>
+                                                                <div class="reviews__name">Влада Голицина</div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </section>
+                                                  </main>
+
+  <main class="page-main">
+    <section class="banner">
+      <div class="banner__container">
+        <div class="banner__text">
+          <h1 class="banner__title">Функциональное<br> питание для котов</h1>
+          <p class="banner__description">Занялся собой? Займись котом!</p>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can.webp 1x, img/index-can@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/index-can.png 1x, img/index-can@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
+                      <img src="img/index-can-mobile.png" alt="Функциональное питание для котов" width="280" height="270" srcset="img/index-can-mobile@2x.png 2x">
+                    </picture>
+                    <a href="form.html" class="button banner__button">подобрать программу</a>
+                  </div>
+                </div>
+              </section>
+              <section class="main-catalog">
+                <ul class="main-catalog__list site-list container">
+                  <li class="main-catalog__item">
+                    <div class="main-catalog__img main-catalog__img--slim">
+                      <img src="img/cat-slim.svg" alt="Похудение" width="36" height="53">
+                    </div>
+                    <h3 class="main-catalog__title">Похудение</h3>
+                    <p class="main-catalog__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                    <a href="catalog.html#pro" class="main-catalog__link">
+                      каталог slim
+                      <svg width="24" height="12" class="main-catalog__arrow">
+                        <use href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="main-catalog__item">
+                    <div class="main-catalog__img main-catalog__img--weight">
+                      <img src="img/cat-pro.svg" alt="Набор массы" width="67" height="28">
+                    </div>
+                    <h3 class="main-catalog__title">Набор массы</h3>
+                    <p class="main-catalog__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                    <a href="catalog.html#pro" class="main-catalog__link">
+                      каталог pro
+                      <svg width="24" height="12" class="main-catalog__arrow">
+                        <use href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+              <section class="advantages container">
+                <h2 class="title-middle advantages__title">Как это работает</h2>
+                <ul class="advantages__list site-list">
+                  <li class="advantages__item">
+                    <div class="advantages__item__img advantages__item__img--sheet"></div>
+                    <p class="advantages__item__description">Функциональное питание содержит только полезные питательные вещества.</p>
+                    <span class="advantages__item__num">1</span>
+                  </li>
+                  <li class="advantages__item">
+                    <div class="advantages__item__img advantages__item__img--boil"></div>
+                    <p class="advantages__item__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+                    <span class="advantages__item__num">2</span>
+                  </li>
+                  <li class="advantages__item">
+                    <div class="advantages__item__img advantages__item__img--food"></div>
+                    <p class="advantages__item__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+                    <span class="advantages__item__num">3</span>
+                  </li>
+                  <li class="advantages__item">
+                    <div class="advantages__item__img advantages__item__img--clock"></div>
+                    <p class="advantages__item__description">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
+                    <span class="advantages__item__num">4</span>
+                  </li>
+                </ul>
+              </section>
+              <section class="example">
+                <div class="example__box container">
+                  <div class="example__info">
+                    <h2 class="title-middle example__title">Живой пример</h2>
+                    <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+                    <div class="example__wrap">
+                      <div class="example__list">
+                        <blockquote class="example__item example__item--slim">
+                          <cite class="example__name">5 КГ</cite>
+                          <p class="example__text">снижение<br> веса</p>
+                        </blockquote>
+                        <blockquote class="example__item example__item--weight">
+                          <cite class="example__name">60 ДНЕЙ</cite>
+                          <p class="example__text">затрачено<br> времени</p>
+                        </blockquote>
+                      </div>
+                      <div class="example__price">Затраты на питание: <span>15 000 РУБ.</span></div>
+                    </div>
+                  </div>
+                  <div class="slider example__slider">
+                    <ul class="slider__list site-list">
+                      <li class="slider__item example__before slider__item--active">
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop.webp 1x, img/before-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
+                              <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
+                                <source media="(min-width: 1440px)" srcset="img/before-desktop.png 1x, img/before-desktop@2x.png 2x">
+                                  <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
+                                    <img src="img/before-mobile.png" alt="было" width="311" height="232" srcset="img/before-mobile@2x.png 2x">
+                                  </picture>
+                                </li>
+                                <li class="slider__item example__after">
+                                  <picture>
+                                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop.webp 1x, img/after-desktop@2x.webp 2x">
+                                      <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
+                                        <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
+                                          <source media="(min-width: 1440px)" srcset="img/after-desktop.png 1x, img/after-desktop@2x.png 2x">
+                                            <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
+                                              <img src="img/after-mobile.png" alt="было" width="251" height="240" srcset="img/after-mobile@2x.png 2x">
+                                            </picture>
+                                          </li>
+                                        </ul>
+                                        <div class="slider__toggles example__toggles">
+                                          <button type="button" class="slider__button slider__button--before slider__button--active">было</button>
+                                          <div class="slider__scale">
+                                            <button class="slider__toggle">
+                                              <span class="visually-hidden">Переключить слайдер</span>
+                                            </button>
+                                          </div>
+                                          <button type="button" class="slider__button slider__button--after">Стало</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </section>
+                                </main>
+                                <footer class="page-footer">
+                                  <div class="page-footer__wrapper">
+                                    <div class="page-footer__container">
+                                      <div class="page-footer__contacts contacts">
+                                        <h3 class="contacts__title">приглашаем<br> к сотрудничеству дилеров!</h3>
+                                        <div class="contacts__text">
+                                          <p class="contacts__street">ул. Большая<br> Конюшенная, д. 19/8</p>
+                                          <p class="contacts__city">Санкт-Петербург</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="page-footer__map map">
+                                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.3806562837185!2d30.322571989234085!3d59.93861227537306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619720890035!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    </div>
+                                  </div>
+                                  <div class="page-footer__bottom">
+                                    <div class="page-footer__bottom-wrap container">
+                                      <a href="/" class="page-footer__logo">
+                                        <span class="visually-hidden">Кэт энерджи</span>
+                                        <svg width="128" height="24" class="page-footer__logo__img">
+                                          <use href="img/sprite.svg#footer-logo"></use>
+                                        </svg>
+                                      </a>
+                                      <ul class="social site-list">
+                                        <li class="social__item">
+                                          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                                            <span class="visually-hidden">Мы в Вконтакте</span>
+                                            <svg width="23" height="16" class="social__img social__img--vk">
+                                              <use href="img/sprite.svg#vk"></use>
+                                            </svg>
+                                          </a>
+                                        </li>
+                                        <li class="social__item">
+                                          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                                            <span class="visually-hidden">Мы в Инстаграме</span>
+                                            <svg width="16" height="16" class="social__img social__img--insta">
+                                              <use href="img/sprite.svg#insta"></use>
+                                            </svg>
+                                          </a>
+                                        </li>
+                                        <li class="social__item">
+                                          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                                            <span class="visually-hidden">Мы в Фейсбуке</span>
+                                            <svg width="10" height="18" class="social__img social__img--facebook">
+                                              <use href="img/sprite.svg#facebook"></use>
+                                            </svg>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <div class="page-footer__copyright copyright">
+                                        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                                          <span class="copyright__text">HTML Academy</span>
+                                          <svg width="27" height="34" class="copyright__img">
+                                            <use href="img/sprite.svg#logo-html"></use>
+                                          </svg>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </footer>
+                              </body>
+                              </html>

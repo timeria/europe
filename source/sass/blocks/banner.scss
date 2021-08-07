@@ -1,0 +1,149 @@
+.banner {
+  position: relative;
+  color: $white;
+  padding: 27px 20px 22px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    text-align: left;
+    padding: 0 30px 527px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 0 270px 101px;
+  }
+}
+
+.banner__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.banner::before {
+  @include beforeAfter;
+  width: 100%;
+  height: 302px;
+  background: $lightgreen;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.banner::after {
+  @include beforeAfter;
+  width: 100%;
+  height: 302px;
+  background: url("../img/cat.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.banner__title {
+  margin: 0 0 23px;
+  font-size: 36px;
+  line-height: 36px;
+  position: relative;
+  font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    margin-left: 87px;
+  }
+}
+
+.banner__description {
+  margin: 0 0 27px;
+  position: relative;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 45px 87px;
+  }
+}
+
+.banner__button {
+  padding: 12px 0;
+  min-width: 280px;
+  margin-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 26px;
+    min-width: auto;
+    z-index: 2;
+    position: relative;
+    margin-left: 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 89px;
+  }
+}
+
+.banner__text img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 100%;
+    max-width: 709px;
+    bottom: 0;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 330px;
+    top: -43px;
+    max-width: 552px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .banner::before,
+  .banner::after {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner::before,
+  .banner::after {
+    right: 0;
+    left: auto;
+    display: block;
+  }
+
+  .banner::before {
+    width: 50%;
+    height: 694px;
+    top: -184px;
+    z-index: -1;
+  }
+
+  .banner::after {
+    width: 50%;
+    height: 694px;
+    top: -185px;
+    z-index: -2;
+    background: url("../img/cat-desctop.jpg") no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/cat-desktop@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .banner__text {
+    max-width: 555px;
+  }
+}
