@@ -9,17 +9,25 @@
 }
 
 @font-face {
-  font-family: "Oswald";
+  font-family: "Montserrat";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
   src:
-    url("../fonts/montserratbold.woff2") format("woff2"),
-    url("../fonts/montserratbold.woff") format("woff");
+    url("../fonts/Montserrat-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Oswald";
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
   font-weight: 700;
   font-style: normal;
   font-display: swap;

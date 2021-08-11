@@ -1,0 +1,155 @@
+.places {
+  padding: 200px 0 19px;
+
+  @media (max-width: $tablet-width) {
+    padding: 80px 0 85px;
+  }
+
+  @media (max-width: $mobile-width) {
+   padding: 80px 0 40px;
+ }
+}
+
+.places__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.places__item {
+  position: relative;
+
+  &:hover {
+    .places__hover,
+    .places__button {
+      opacity: 1;
+    }
+
+    .places__hover {
+      z-index: 1;
+    }
+
+    .places__button {
+      z-index: 2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 100px;
+    width: 30%;
+    margin-right: 5%;
+
+    &:nth-child(3n + 3) {
+     margin-right: 0;
+   }
+ }
+
+ @media (max-width: $tablet-width) {
+  margin-bottom: 33px;
+  margin-right: 40px;
+  max-width: 288px;
+
+  &:nth-child(2n + 2) {
+   margin-right: 0;
+ }
+
+ &:last-child {
+  margin: 0;
+}
+}
+
+@media (max-width: $mobile-width) {
+  margin: 0 auto 25px;
+
+  &:nth-child(2n + 2) {
+    margin-right: auto;
+  }
+
+  &:last-child {
+    margin: 0 auto;
+  }
+}
+}
+
+.places__name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3px;
+  padding: 16px 63px;
+  background: $white;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.415px;
+  margin: 0;
+}
+
+.places__description {
+  max-width: 343px;
+  margin: 0 0 55px;
+
+  @media (max-width: $tablet-width) {
+   margin: 0 auto 40px;
+ }
+
+ @media (max-width: $mobile-width) {
+  margin: 0 auto 19px;
+}
+}
+
+.places__container {
+  @media (max-width: $tablet-width) {
+    padding: 0 75px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+  }
+}
+
+.places__link {
+  color: $grey;
+}
+
+.places__hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $blackhover;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.places__button {
+  display: block;
+  position: absolute;
+  width: 266px;
+  height: 77px;
+  border: 1px solid $whitehover;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 77px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  color: $white;
+  z-index: -2;
+  opacity: 0;
+  transition: opacity .2s;
+}
+

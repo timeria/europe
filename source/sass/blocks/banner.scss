@@ -1,149 +1,137 @@
 .banner {
+  width: 100%;
+  height: 860px;
   position: relative;
-  color: $white;
-  padding: 27px 20px 22px;
-  text-align: center;
 
-  @media (min-width: $tablet-width) {
-    color: $black;
-    text-align: left;
-    padding: 0 30px 527px 30px;
+  @media (max-width: $tablet-width) {
+    height: 344px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 40px 0 270px 101px;
+  @media (max-width: $mobile-width) {
+    height: auto;
+  }
+}
+
+.banner__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url('../img/banner.jpg') center center no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/banner@2x.jpg");
+  }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+    height: 235px;
   }
 }
 
 .banner__container {
-  max-width: 1440px;
-  margin: 0 auto;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    position: initial;
+  }
 }
 
-.banner::before {
-  @include beforeAfter;
-  width: 100%;
-  height: 302px;
-  background: $lightgreen;
-  z-index: 0;
-  top: 0;
-  left: 0;
-}
+.banner__text {
+  position: absolute;
+  right: 90px;
+  top: 185px;
+  color: $white;
+  max-width: 376px;
 
-.banner::after {
-  @include beforeAfter;
-  width: 100%;
-  height: 302px;
-  background: url("../img/cat.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  @media (max-width: $tablet-width) {
+    max-width: 393px;
+    text-align: center;
+    right: auto;
+    top: 60px;
+  }
+
+  @media (max-width: $mobile-width) {
+    position: initial;
+    top: auto;
+    max-width: 100%;
+  }
 }
 
 .banner__title {
-  margin: 0 0 23px;
-  font-size: 36px;
-  line-height: 36px;
-  position: relative;
-  font-weight: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  margin: 0 0 28px;
 
-  @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 40px;
-    margin-left: 87px;
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 150%;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    margin: 0;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 .banner__description {
-  margin: 0 0 27px;
-  position: relative;
-  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: -0.466667px;
+  margin: 0 0 35px;
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-    margin: 0 0 45px 87px;
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    margin: 0 0 9px;
+  }
+
+  @media (max-width: $mobile-width) {
+    color: $grey;
+    margin: 20px 0;
+    padding: 0 10px;
   }
 }
 
 .banner__button {
-  padding: 12px 0;
-  min-width: 280px;
-  margin-top: 4px;
-
-  @media (min-width: $tablet-width) {
-    padding: 17px 26px;
-    min-width: auto;
-    z-index: 2;
-    position: relative;
-    margin-left: 81px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 89px;
-  }
-}
-
-.banner__text img {
+  padding: 30px 160px 30px 36px;
   position: relative;
-  display: block;
-  margin: 0 auto;
+  max-width: 340px;
 
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    width: 100%;
-    max-width: 709px;
-    bottom: 0;
-    height: auto;
+  @media (max-width: $tablet-width) {
+    padding: 19px 107px 19px 36px;
+    max-width: 250px;
+    margin: 0 auto;
   }
 
-  @media (min-width: $desktop-width) {
-    right: 330px;
-    top: -43px;
-    max-width: 552px;
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+    text-align: left;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .banner::before,
-  .banner::after {
-    display: none;
-  }
+.banner__button::after {
+  @include beforeAfter;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+  width: 16px;
+  height: 16px;
+  background: url('../img/icons/arrow-right.svg');
 }
 
-@media (min-width: $desktop-width) {
-  .banner::before,
-  .banner::after {
-    right: 0;
-    left: auto;
-    display: block;
-  }
-
-  .banner::before {
-    width: 50%;
-    height: 694px;
-    top: -184px;
-    z-index: -1;
-  }
-
-  .banner::after {
-    width: 50%;
-    height: 694px;
-    top: -185px;
-    z-index: -2;
-    background: url("../img/cat-desctop.jpg") no-repeat;
-    background-size: cover;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/cat-desktop@2x.jpg") no-repeat;
-      background-size: cover;
-    }
-  }
-
-  .banner__text {
-    max-width: 555px;
-  }
-}

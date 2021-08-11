@@ -1,66 +1,59 @@
-.site-list__link {
-  text-transform: uppercase;
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 
-  @media (max-width: $mobile-width) {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
-    color: $black;
+  @media (max-width: $tablet-width) {
     display: block;
-    padding: 22px 0 23px;
-    border-top: 1px solid $menuborder;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 24px;
-    color: $black;
-    padding-bottom: 8px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
-    color: $white;
+    width: 100%;
   }
 }
 
-.site-list__link--active {
-  @media (min-width: $tablet-width) {
-    border-bottom: 2px solid $green;
-  }
-
-  @media (min-width: $desktop-width) {
-    border-color: $white;
-  }
+.site-list__link {
+  color: $black;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  transition: color .3s;
 }
 
 .site-list__link:hover {
-  opacity: 0.8;
-}
-
-.site-list__link:focus {
-  opacity: 0.6;
+  color: $red;
 }
 
 .site-list__item {
-  @media (min-width: $tablet-width) {
-    margin-right: 35px;
-  }
+  margin-right: 37px;
 
-  @media (min-width: $desktop-width) {
-    &:nth-child(n+4) {
-      margin-top: 20px;
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 15px 35px 15px;
+    background-color: $navitem;
+    margin-bottom: 30px;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
     }
-  }
-}
 
-.site-list__item:last-child {
-  margin-right: 0;
-}
+    &::after,
+    &::before {
+      @include beforeAfter;
+      width: 2px;
+      height: 7px;
+      background-color: $greyarrow;
+      top: 50%;
+      right: 35px;
+    }
 
-@media (max-width: $mobile-width) {
-  .site-list__item:last-child .site-list__link {
-    border-bottom: 1px solid $menuborder;
+    &::before {
+      transform: translate(0, -50%) rotate(45deg);
+      transform-origin: bottom left;
+    }
+
+     &::after {
+      transform: translate(0, -50%) rotate(-45deg);
+      transform-origin: top left;
+     }
   }
 }

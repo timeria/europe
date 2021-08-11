@@ -1,7 +1,7 @@
 {
   "name": "europe",
   "private": true,
-  "version": "1.0.0",
+  "description": "Личный проект «Europe",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
@@ -43,15 +43,7 @@
     "source/img/**/*.svg",
     "source/sass/**/*.scss"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/timeria/europe.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/timeria/europe/issues"
-  },
-  "homepage": "https://github.com/timeria/europe#readme",
-  "description": ""
+  "engines": {
+    "node": "14.15.0"
+  }
 }

@@ -1,31 +1,27 @@
 // Colors
 
-$black: #000000;
-$white: #ffffff;
-$whitefocus: rgba(255, 255, 255, 0.3);
-$green: #68b738;
-$lightgreen: rgba(104, 183, 56, 0.85);
-$greenhover: #5eaa2f;
-$darkgrey: #dcdcdc;
-$lightgrey: #f2f2f2;
-$grey: #eaeaea;
-$greyline: #d9d9d9;
-$bordercolor: #e7e7e7;
-$lightblack: #444444;
-$bordererror: #ff8282;
-$greydisabled: #222222;
-$blacktitle: #111111;
-$borderradio: #cdcdcd;
-$catborder: #ebebeb;
-$menuborder: #e6e6e6;
-$greyfocus: rgba(68, 68, 68, 0.3);
-$fillsvg: #666666;
-$slidestroke: rgba(0, 0, 0, 0.24);
-$dropshadow: rgba(0, 0, 0, 0.2);
+$white: #FFFFFF;
+$whitehover: rgba(255, 255, 255, 0.7);
+$black: #141517;
+$grey: #2C2E3F;
+$red: #FE7865;
+$orange: #F17D4B;
+$greylight: rgba(44, 46, 63, 0.7);
+$greytabs: rgba(44, 46, 63, 0.3);
+$greyarrow: rgba(44, 46, 63, 0.5);
+$blacklight: rgba(20, 21, 23, 0.7);
+$blackhover: rgba(20, 21, 23, 0.6);
+$redlight: rgba(254, 120, 101, .5);
+$link: #000000;
+$footerborder: #D7D9DF;
+$footerlink: rgba(20, 21, 23, 0.5);
+$navitem: #FBF8F8;
+$success: #48494D;
 // Viewports
 
-$tablet-width: 768px;
-$desktop-width: 1440px;
+$desktop-max: 1200px;
+$tablet-width: 1023px;
+$desktop-width: 1024px;
 $mobile-width: 767px;
 
 @mixin beforeAfter {

@@ -1,41 +1,22 @@
 .main-nav {
-  @media (max-width: $mobile-width) {
-    width: 100%;
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100vh;
+    max-height: 568px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     z-index: 5;
-    background: $white;
-    text-align: center;
-    left: 0;
     display: none;
   }
+}
 
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
+.main-nav__close {
   @media (min-width: $desktop-width) {
-    max-width: 45%;
-  }
-}
-
-.main-nav__list {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: $mobile-width) {
-  .main-nav.main-nav--active {
-    display: block;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav--pages a {
-    color: $blacktitle;
-  }
-
-  .main-nav--pages .site-list__link--active {
-    border-color: $green;
+    display: none;
   }
 }
